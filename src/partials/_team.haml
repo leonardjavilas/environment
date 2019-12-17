@@ -1,0 +1,46 @@
+%section.team#team
+	.container
+		.row
+			.col-12.col-md-8.offset-md-2
+			.col-12.col-sm-12.col-md-10.offset-md-1.col-lg-8.offset-lg-2
+				.team__info
+					%h3.text-center.text-uppercase what they say about us
+					.author
+						#pills-tabContent.tab-content
+							#pills-home.tab-pane.fade.show.active{"aria-labelledby" => "pills-home-tab", :role => "tabpanel"} 
+								%p.mb-0.py-4.text-center "Sit amet, consectetur adipisicing elit. Fuga obcaecati enim aut beatae alias est quia quam, nulla voluptates voluptatem, voluptatum ipsam a vel quos illo unde, incidunt quaerat exercitationem."
+								%center 
+									.line
+								%p.mb-0.text.center.text-uppercase.name#js-userOne
+								%p.mb-0.text.center.text-uppercase.position CEO of Getdough
+							#pills-profile.tab-pane.fade{"aria-labelledby" => "pills-profile-tab", :role => "tabpanel"}
+								%p.mb-0.py-4.text-center "Provident. Aperiam asperiores odit earum blanditiis ipsam, commodi deserunt porro, omnis assumenda explicabo necessitatibus. Accusamus, sequi. Lorem ipsum dolor sit amet."
+								%center 
+									.line
+								%p.mb-0.text.center.text-uppercase.name#js-userTwo
+								%p.mb-0.text.center.text-uppercase.position CFO of Getdough
+							#pills-contact.tab-pane.fade{"aria-labelledby" => "pills-contact-tab", :role => "tabpanel"}
+								%p.mb-0.py-4.text-center "Velit libero in eaque sunt, veniam nobis voluptates vitae earum! Odit amet obcaecati aperiam a corporis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem a, dolorum, atque ut officiis liber"
+								%center 
+									.line
+								%p.mb-0.text.center.text-uppercase.name#js-userThree
+								%p.mb-0.text.center.text-uppercase.position CIO of Getdough
+							#pills-last.tab-pane.fade{"aria-labelledby" => "pills-contact-tab", :role => "tabpanel"}
+								%p.mb-0.py-4.text-center "Dolor sit amet, consectetur adipisicing elit. Id nisi quidem sapiente magni beatae debitis et dolores quae facere labore aspernatur deserunt providennt perferendis architecto, ad similique quos, veniam suscipit!"
+								%center 
+									.line
+								%p.mb-0.text.center.text-uppercase.name#js-userFour
+								%p.mb-0.text.center.text-uppercase.position CTO of Getdough
+						%ul#pills-tab.nav.nav-pills.align-content-center.d-flex.justify-content-center{:role => "tablist"}
+							%li.nav-item
+								%a#pills-home-tab.active{"aria-controls" => "pills-home", "aria-selected" => "true", "data-toggle" => "pill", :href => "#pills-home", :role => "tab"}
+									.profile.active{:style => "background-image: url('assets/img/person_d.jpg');"}
+							%li.nav-item
+								%a#pills-profile-tab{"aria-controls" => "pills-profile", "aria-selected" => "false", "data-toggle" => "pill", :href => "#pills-profile", :role => "tab"} 
+									.profile{:style => "background-image: url('assets/img/person_c.jpg');"}
+							%li.nav-item
+								%a#pills-contact-tab{"aria-controls" => "pills-contact", "aria-selected" => "false", "data-toggle" => "pill", :href => "#pills-contact", :role => "tab"}
+									.profile{:style => "background-image: url('assets/img/person_b.jpg');"}
+							%li.nav-item
+								%a#pills-last-tab{"aria-controls" => "pills-last", "aria-selected" => "false", "data-toggle" => "pill", :href => "#pills-last", :role => "tab"}
+									.profile{:style => "background-image: url('assets/img/person_a.jpg');"}

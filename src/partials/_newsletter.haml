@@ -1,0 +1,18 @@
+%section.newsletter#newsletter
+	.container
+		.row
+			.col-12
+				.newsletter__info
+					%h3.text-center.text-uppercase.mb-0 newsletter
+					%p.mb-0.py-4.text-center Leam more how to use our product and sing up to our newsletter.
+			.col-12.col-sm-12.col-md-8.offset-md-2.col-lg-6.offset-lg-3
+				.newsletter__form
+					%form#form-newsletter{:action => "", :method => "post"}
+						.form-row
+							.col-12.col-md-8.mb-2.mb-md-0
+								%label.sr-only.col-form-label{:for => "email"} Email
+								%input#email.form-control.col-m{:name => "email", :placeholder => "Email", :type => "email", :required => "true"}/
+							.col-12.col-md-4.mt-3.mt-md-0
+								%button.btn.btn-outline-dark.mb-2.btn-block.text-uppercase{:type => "submit"} Subscribe
+
+									

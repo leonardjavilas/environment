@@ -1,0 +1,23 @@
+%header.header
+  %nav#navbar.navbar.navbar-expand-lg.navbar-dark.fixed-top.header__info
+    .container
+      %a.navbar-brand{:href => "#"}
+        %img.d-inline-block.align-top{:alt => "", :height => "30", :src => "assets/img/atlassian.svg", :width => "30"}/
+        Atlassian Software
+      %button.navbar-toggler{"aria-controls" => "navbar-menu", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbar-menu", "data-toggle" => "collapse", type: "button"}
+        %span.navbar-toggler-icon
+      #navbar-menu.collapse.navbar-collapse.header__info--items 
+        %ul.navbar-nav.ml-auto
+          %li.nav-item
+            %a.nav-link.text-uppercase.fixed-link.active{href: "#home"} Home      
+          %li.nav-item
+            %a.nav-link.text-uppercase{href: "#plataform"} Plataform
+          %li.nav-item
+            %a.nav-link.text-uppercase{href: "#about"} About
+          %li.nav-item
+            %a.nav-link.text-uppercase{href: "#team"} Team
+          %li.nav-item
+            %a.nav-link.text-uppercase{href: "#contact"} Contact
+          %li.nav-item
+            %a.nav-link.text-uppercase.link-login{href: "#"} Sign up
+

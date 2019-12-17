@@ -1,0 +1,25 @@
+%section.contact#contact
+	.container
+		.row
+			.col-12
+				.contact__info
+					%h3.text-center.text-uppercase.mb-0 contact us
+					%p.mb-0.py-4.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elits oluta voluptas sunt
+			.col-12.col-sm-12.col-md-8.offset-md-2.col-lg-4.offset-lg-4
+				.contact__form
+					.card
+						.card-body
+							%form#form-contact.form-horizontal{:action => "", :method => "post"}
+								.form-group
+									%label.sr-only.col-form-label{:for => "id"} RUT
+									%input#id.rut.form-control{:name => "id", :placeholder => "RUT", :type => "text", :maxlength => "12", :minlength => ""}
+								.form-group
+									%label.sr-only.col-form-label{:for => "phone"} Phone
+									%input#phone.form-control{:name => "phone", :placeholder => "Phone", :type => "text", :maxlength => "9", :minlength => "9"}/
+								.form-group
+									%label.sr-only.col-form-label{:for => "mail"} EMail
+									%input#mail.form-control{:name => "mail", :placeholder => "E-mail", :type => "text"}/
+								.form-group.mb-0
+									%center
+										%button.btn.btn-outline-dark.m-0.btn-block.text-uppercase{:type => "submit"} Quote
+							

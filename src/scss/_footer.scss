@@ -1,0 +1,16 @@
+//footer
+.footer{
+	position: relative;
+	padding: 20px 0;
+	background-color: $bg-color-footer;
+  &__info{
+  	p{
+  		font-family: $font-primary;  		
+  		color: white;
+  		font-weight: 500;
+  		font-size: 12px;
+  		text-transform: uppercase;
+  	};
+  }
+}
+
