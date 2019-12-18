@@ -1,22 +1,24 @@
 //header
-.header{
-  &__info{
-  	background-color: $bg-color-header !important;
-  	&--items{
-  		ul{
-  			li{
-  				a{
-					font-family: $font-primary;  		
-					color: $color-item-header !important;
-					font-weight: 500;
-					font-size: 15px;
-  				}
-  				a.active{
-  				   font-weight: bold;
-  				   color: #b7b7b7 !important;
-  				}
-  			}
-  		}
-  	}
+.header {
+  &__info {
+    background-color: $bg-header !important;
+
+    &--items {
+      ul {
+        li {
+          a {
+            font-family: $font-primary;
+            color: $color-item-header !important;
+            font-weight: 500;
+            font-size: 15px;
+          }
+
+          a.active {
+            font-weight: bold;
+            color: #b7b7b7 !important;
+          }
+        }
+      }
+    }
   }
 }

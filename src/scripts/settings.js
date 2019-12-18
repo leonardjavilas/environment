@@ -156,7 +156,7 @@ $( document ).ready(function() {
       });
 
         $(".single-item").slick({
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 3000,
             speed: 500,
             infinite: true,

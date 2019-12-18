@@ -1,11 +1,5 @@
 //Breakpoints for Bootstrap version 4.1.3
-$breakpoints: (
-  'xs': "(min-width: 0px) and (max-width: 575px)",
-  'sm': "(min-width: 576px) and (max-width: 767px)",
-  'md': "(min-width: 768px) and (max-width: 991px)",
-  'lg': "(min-width: 992px) and (max-width: 1199px)",
-  'xl': "(min-width: 1200px)",
-) !default;
+$breakpoints: ("xs": "(min-width: 0px) and (max-width: 575px)", "sm": "(min-width: 576px) and (max-width: 767px)", "md": "(min-width: 768px) and (max-width: 991px)", "lg": "(min-width: 992px) and (max-width: 1199px)", "xl": "(min-width: 1200px)") !default;
 
 //Breakpoints for Bootstrap v3.3.7
 // $breakpoints: (
@@ -16,25 +10,42 @@ $breakpoints: (
 //   'xl': "(min-width: 1601px) and (max-width: 2048px)",
 // ) !default;
 
-//Movistar Brand - Utilities
-
+//Brand -Movistar
 //Fonts
-$font-primary: 'Roboto', sans-serif;;
-$font-secondary: 'Open Sans', sans-serif;;
+$font-primary: "Roboto", sans-serif;
+$font-secondary: "Open Sans", sans-serif;
 
 //primary fonts
-$font-primary-telebold:'telefonicabold';
-$font-primary-telelight:'telefonicalight';
-$font-primary-teleextralight:'telefonicaextralight';
-$font-primary-teleregular:'telefonicaregular';
-$font-primary-teleregular-italic:'telefonicaregular_italic';
+$font-primary-telebold: "telefonicabold";
+$font-primary-telelight: "telefonicalight";
+$font-primary-teleextralight: "telefonicaextralight";
+$font-primary-teleregular: "telefonicaregular";
+$font-primary-teleregular-italic: "telefonicaregular_italic";
 
 //secondary fonts
-$font-secondary-arial: 'arialregular';
-$font-secondary-telehand: 'telefonicahand';
+$font-secondary-arial: "arialregular";
+$font-secondary-telehand: "telefonicahand";
+
+//primary palette
+$pantone-2995: rgb(0, 169, 224);
+$pantone-2287: rgb(91, 197, 0);
+
+//secondary palette
+$pantone-258: rgb(149, 75, 151);
+$pantone-710: rgb(233, 66, 109);
+$pantone-7416: rgb(236, 104, 57);
+
+//gray palette
+$pantone-cool-gray-1: rgb(233, 234, 232);
+$pantone-cool-gray-3: rgb(211, 212, 211);
+$pantone-cool-gray-5: rgb(182, 183, 183);
+$pantone-cool-gray-8: rgb(134, 136, 140);
+$pantone-cool-gray-10: rgb(80, 83, 90);
+
+$bg-header: #ffffff;
 
 //Background Section
-$bg-color-home: #e8e8e8; 
+$bg-color-home: #e8e8e8;
 $bg-color-header: #323b43;
 $bg-color-about: #f3f5f8;
 $bg-color-team: #ffffff;
@@ -49,7 +60,7 @@ $bg-form-contact: #f3f5f8;
 $color-item-header: #dbe0e3;
 $color-title: #9cafc3;
 $color-button: #9cafc3;
-$color-border-button: #9cafc3; 
+$color-border-button: #9cafc3;
 $fontSize: 10px;
 $coloruno: #ed1c24;
 $colordos: #f7941d;
@@ -57,9 +68,7 @@ $colortres: #663399;
 $success: #28a745;
 
 $arrow-color: #f50000;
-$arrow-size: 25px; 
+$arrow-size: 25px;
 $dots-color: #ffffff;
-$dots-color-active: #f50000;
+$dots-color-active: rgb(0, 169, 224);
 $dots-size: 10px;
-
-//color palette
