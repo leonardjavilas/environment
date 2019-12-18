@@ -7,12 +7,31 @@ $breakpoints: (
   'xl': "(min-width: 1200px)",
 ) !default;
 
+//Breakpoints for Bootstrap v3.3.7
+// $breakpoints: (
+//   'xs': "(min-width: 0px) and (max-width: 767px)",
+//   'sm': "(min-width: 768px) and (max-width: 991px)",
+//   'md': "(min-width: 992px) and (max-width: 1199px)",
+//   'lg': "(min-width: 1200px) and (max-width: 1600px)",
+//   'xl': "(min-width: 1601px) and (max-width: 2048px)",
+// ) !default;
 
-//Brand Color - Corporative
+//Movistar Brand - Utilities
 
 //Fonts
 $font-primary: 'Roboto', sans-serif;;
 $font-secondary: 'Open Sans', sans-serif;;
+
+//primary fonts
+$font-primary-telebold:'telefonicabold';
+$font-primary-telelight:'telefonicalight';
+$font-primary-teleextralight:'telefonicaextralight';
+$font-primary-teleregular:'telefonicaregular';
+$font-primary-teleregular-italic:'telefonicaregular_italic';
+
+//secondary fonts
+$font-secondary-arial: 'arialregular';
+$font-secondary-telehand: 'telefonicahand';
 
 //Background Section
 $bg-color-home: #e8e8e8; 
@@ -31,3 +50,16 @@ $color-item-header: #dbe0e3;
 $color-title: #9cafc3;
 $color-button: #9cafc3;
 $color-border-button: #9cafc3; 
+$fontSize: 10px;
+$coloruno: #ed1c24;
+$colordos: #f7941d;
+$colortres: #663399;
+$success: #28a745;
+
+$arrow-color: #f50000;
+$arrow-size: 25px; 
+$dots-color: #ffffff;
+$dots-color-active: #f50000;
+$dots-size: 10px;
+
+//color palette

@@ -10,9 +10,12 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-cssbeautify": "^2.0.0"
   },
   "dependencies": {
+    "browserslist": "^4.8.2",
     "gulp-html-beautify": "^1.0.1",
     "gulp-ignore": "^3.0.0",
     "gulp-sass": "^4.0.2"

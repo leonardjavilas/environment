@@ -5,10 +5,12 @@ const haml = require('gulp-ruby-haml');
 const browserSync = require('browser-sync').create();
 const gulpIgnore = require("gulp-ignore");
 const htmlbeautify = require("gulp-html-beautify");
+const cssbeautify = require('gulp-cssbeautify');
+const autoprefixer = require('gulp-autoprefixer');
 
 // Project - config paths
 const dir_src = 'src';
-const dir_dist = 'docs';
+const dir_dist = 'dist';
 
 // set of route objects - start
 const src_paths = {
@@ -78,6 +80,13 @@ gulp.task('js', function() {
 gulp.task('sass', function () {
   return gulp.src(src_paths.sass)
     .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({
+      browsers: ['last 5 versions'],
+      cascade: false
+    }))
+    .pipe(cssbeautify({
+      indent: '  '
+     }))
     .pipe(gulp.dest(dist_paths.css));
 });
 

@@ -1,16 +1,51 @@
 //footer
-.footer{
-	position: relative;
-	padding: 20px 0;
-	background-color: $bg-color-footer;
-  &__info{
-  	p{
-  		font-family: $font-primary;  		
-  		color: white;
-  		font-weight: 500;
-  		font-size: 12px;
-  		text-transform: uppercase;
-  	};
+.footer {
+  position: relative;
+  padding: 20px 0;
+  background-color: $bg-color-footer;
+
+  &__info {
+    p {
+      font-family: $font-primary;
+      color: white;
+      font-weight: 500;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+  }
+
+  .uno {
+    font-family: $font-primary-telebold;
+    color: white;
+  }
+
+  .dos {
+    font-family: $font-primary-telelight;
+    color: white;
+  }
+
+  .tres {
+    font-family: $font-primary-teleextralight;
+    color: white;
+  }
+
+  .cuatro {
+    font-family: $font-primary-teleregular;
+    color: white;
+  }
+
+  .cinco {
+    font-family: $font-primary-teleregular-italic;
+    color: white;
+  }
+
+  .seis {
+    font-family: $font-secondary-arial;
+    color: white;
+  }
+
+  .siete {
+    font-family: $font-secondary-telehand;
+    color: white;
   }
 }
-

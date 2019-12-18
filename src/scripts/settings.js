@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     
     // scrollspy
-    $("body").scrollspy({ target: '#navbar-menu' })
+    $("body").scrollspy({ target: '#navbar-menu' });
 
     //smooth Scroll
     $('a[href*="#"]:not([href="#"]):not([data-toggle])').click(function() {
@@ -154,6 +154,17 @@ $( document ).ready(function() {
          $(".profile").removeClass('active');
          $(this).addClass('active');
       });
+
+        $(".single-item").slick({
+            autoplay: true,
+            autoplaySpeed: 3000,
+            speed: 500,
+            infinite: true,
+            cssEase: 'linear',
+            fade: true,
+            arrows: true,
+            dots: true,
+        });
 
 });
 
