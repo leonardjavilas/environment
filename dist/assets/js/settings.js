@@ -1,5 +1,21 @@
 $( document ).ready(function() {
     
+  //load Google Fonts asynchronously 
+  WebFontConfig = {
+    google: {
+      families: ['Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i', 'Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i']
+    }
+  };
+  (function () {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+
+
     // scrollspy
     $("body").scrollspy({ target: '#navbar-menu' });
 
@@ -155,17 +171,33 @@ $( document ).ready(function() {
          $(this).addClass('active');
       });
 
-        $(".single-item").slick({
-            autoplay: false,
-            autoplaySpeed: 3000,
-            speed: 500,
-            infinite: true,
-            cssEase: 'linear',
-            fade: true,
-            arrows: true,
-            dots: true,
-        });
-
+    $(".single-item").slick({
+        autoplay: false,
+        autoplaySpeed: 3000,
+        speed: 500,
+        infinite: true,
+        cssEase: 'linear',
+        fade: true,
+        arrows: true,
+        dots: true,
+    });
+    var userOne = document.getElementById('js-userOne');
+    var userTwo = document.getElementById('js-userTwo');
+    var userThree = document.getElementById('js-userThree');
+    var userFour = document.getElementById('js-userFour');
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then(function (response){
+        return response.json();
+      })
+      .then(function(user){
+        userOne.innerHTML = user[0].name;
+        userTwo.innerHTML = user[1].name;
+        userThree.innerHTML = user[2].name;
+        userFour.innerHTML = user[3].name;
+      })
+      .catch(function(){
+        console.log('¡Algo ha fallado - Users!');
+      });
 });
 
 

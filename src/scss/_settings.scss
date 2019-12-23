@@ -1,20 +1,23 @@
 //settings
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 html,
 body {
-  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  overflow-x: hidden;
+
+  /* Prevent scroll on narrow devices */
 }
 
 body {
   padding-top: 56px;
   position: relative;
-}
 
+  //display: flex;
+}
