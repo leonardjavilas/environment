@@ -13,6 +13,16 @@ body {
   overflow-x: hidden;
 
   /* Prevent scroll on narrow devices */
+  font-size: $fontSize;
+
+  @include respond-to(xs) {
+    font-size: 7px;
+  }
+
+
+  @include respond-to(sm) {
+    font-size: 8px;
+  }
 }
 
 body {
@@ -20,4 +30,10 @@ body {
   position: relative;
 
   //display: flex;
+}
+
+@include respond-to(xl) {
+  .container {
+    max-width: $container-width !important;
+  }
 }

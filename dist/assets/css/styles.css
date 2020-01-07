@@ -8,11 +8,32 @@ html,
 body {
   overflow-x: hidden;
   /* Prevent scroll on narrow devices */
+  font-size: 0.65rem;
+}
+
+@media (min-width: 0px) and (max-width: 575px) {
+  html,
+    body {
+    font-size: 7px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  html,
+    body {
+    font-size: 8px;
+  }
 }
 
 body {
   padding-top: 56px;
   position: relative;
+}
+
+@media (min-width: 1200px) and (max-width: 1920px) {
+  .container {
+    max-width: 1088px !important;
+  }
 }
 
 @font-face {
@@ -72,7 +93,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #dbe0e3 !important;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 .header__info--items ul li a.active {
@@ -98,6 +119,7 @@ body {
 .home__info p {
   font-family: "Open Sans", sans-serif;
   padding: 40px 0;
+  font-size: 1.6rem;
 }
 
 .home__info button {
@@ -153,6 +175,7 @@ body {
   font-family: "Open Sans", sans-serif;
   padding: 40px 0;
   color: #9cafc3;
+  font-size: 1.6rem;
 }
 
 .plataform__feautures--box--icon {
@@ -182,10 +205,10 @@ body {
 .plataform__feautures--box--info p {
   margin-bottom: 0;
   margin-top: 10px;
-  font-size: 14px;
   color: #9cafc3;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
+  font-size: 1.4rem;
 }
 
 .about {
@@ -202,6 +225,7 @@ body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.8;
   color: #9cafc3;
+  font-size: 1.6rem;
 }
 
 .about__info button {
@@ -328,6 +352,7 @@ body {
   padding: 40px 0;
   color: #9cafc3;
   line-height: 1.8;
+  font-size: 1.6rem;
 }
 
 .team__info .line {
@@ -401,6 +426,15 @@ body {
   font-family: "Open Sans", sans-serif;
   padding: 40px 0;
   color: #9cafc3;
+  font-size: 1.6rem;
+}
+
+.newsletter__form form input {
+  font-size: 1.6rem;
+}
+
+.newsletter__form form button {
+  font-size: 1.6rem;
 }
 
 .newsletter__form button {
@@ -445,10 +479,19 @@ body {
   font-family: "Open Sans", sans-serif;
   padding: 40px 0;
   color: #9cafc3;
+  font-size: 1.6rem;
 }
 
 .contact__form .card {
   background-color: #f3f5f8;
+}
+
+.contact__form .card .card-body form input {
+  font-size: 1.6rem;
+}
+
+.contact__form .card .card-body form button {
+  font-size: 1.6rem;
 }
 
 .contact__form button {
@@ -489,7 +532,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: white;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 1.2rem;
   text-transform: uppercase;
 }
 

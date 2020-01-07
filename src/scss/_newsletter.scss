@@ -1,40 +1,55 @@
 //newsletter
-.newsletter{
+.newsletter {
   padding: 80px 0;
   background-color: $bg-color-newsletter;
-  &__info{
-  	h3{
-       font-family: $font-primary;
-       color: $color-title;
-  	};
-  	p{
-  		font-family: $font-secondary;
-  		padding: 40px 0;
-  		color: $color-title;
 
-  	};
+  &__info {
+    h3 {
+      font-family: $font-primary;
+      color: $color-title;
+    }
+
+    p {
+      font-family: $font-secondary;
+      padding: 40px 0;
+      color: $color-title;
+      font-size: 1.6rem;
+    }
   }
-  &__form{
-  	button{
-  	   color: $color-button;
-       border-color: $color-border-button;
-  	   border-width: 2px;
-  	   font-family: $font-primary;
-       font-weight: 500;
-  	   transition: 1s all;
-  	   box-shadow: none;
-       outline: none;
-      &:hover{
-  	   box-shadow: none;
-       outline: none;
-  	   color: white;
-  	   border-color: $color-border-button;
-       background-color: $color-border-button;
+
+  &__form {
+    form {
+      input {
+        font-size: 1.6rem;
       }
-      &:focus{
-      	box-shadow: none;
-      	outline: none;
+
+      button {
+        font-size: 1.6rem;
       }
-  	}
+    }
+
+    button {
+      color: $color-button;
+      border-color: $color-border-button;
+      border-width: 2px;
+      font-family: $font-primary;
+      font-weight: 500;
+      transition: 1s all;
+      box-shadow: none;
+      outline: none;
+
+      &:hover {
+        box-shadow: none;
+        outline: none;
+        color: white;
+        border-color: $color-border-button;
+        background-color: $color-border-button;
+      }
+
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
+    }
   }
 }
